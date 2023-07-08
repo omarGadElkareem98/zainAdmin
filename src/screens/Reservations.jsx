@@ -15,7 +15,7 @@ const ReservationPage = () => {
 
   const fetchReservations = async () => {
     try {
-      const response = await axios.get('https://technicians.onrender.com0/reservations');
+      const response = await axios.get('https://technicians.onrender.com/reservations');
       setReservations(response.data);
       setLoading(false);
     } catch (error) {

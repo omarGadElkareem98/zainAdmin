@@ -65,7 +65,7 @@ const CreateTechnician = () => {
       formData_x.append('from', formData.from);
       formData_x.append('to', formData.to);
 
-      const response = await axios.post('https://technicians.onrender.com0/technicians', formData_x);
+      const response = await axios.post('https://technicians.onrender.com/technicians', formData_x);
       console.log(response);
       navigate('/technicians'); // Redirect to technicians screen after successful creation
     } catch (error) {

@@ -29,7 +29,7 @@ const Users = () => {
 
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`https://technicians.onrender.com/api/users/${id}`);
+      await axios.delete(`https://technicians.onrender.com/users/${id}`);
       fetchUsers(); // Refresh the users list after deletion
     } catch (error) {
       console.log('Error deleting user:', error);
